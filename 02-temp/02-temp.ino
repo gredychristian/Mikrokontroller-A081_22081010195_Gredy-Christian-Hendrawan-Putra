@@ -142,5 +142,5 @@ void loop() {
     Q2on();
     ledoff();
   }
-  delay (100);
+  delay (1000);
 }
