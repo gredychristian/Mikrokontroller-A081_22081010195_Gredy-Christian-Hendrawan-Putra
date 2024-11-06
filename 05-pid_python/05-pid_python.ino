@@ -43,6 +43,7 @@ const int Q2Channel = 2;
 const int resolutionLedChannel = 8; //Resolution 8, 10, 12, 15
 const int resolutionQ1Channel = 8; //Resolution 8, 10, 12, 15
 const int resolutionQ2Channel = 8; //Resolution 8, 10, 12, 15
+const int ledPin = 2;
 
 const double upper_temperature_limit = 59;
 
@@ -158,6 +159,7 @@ void checkTemp(void) {
 
 // arduino startup
 void setup() {
+  pinMode(ledPin, OUTPUT);
   //analogReference(EXTERNAL);
   Serial.begin(baud); 
   while (!Serial) {
@@ -184,6 +186,11 @@ void setup() {
 
   ledcWrite(Q1Channel,0);
   ledcWrite(Q2Channel,0);
+
+  // LED Indicator Success
+  digitalWrite(ledPin, HIGH);
+  delay(2000);
+  digitalWrite(ledPin, LOW);
 }
 
 // arduino main event loop
