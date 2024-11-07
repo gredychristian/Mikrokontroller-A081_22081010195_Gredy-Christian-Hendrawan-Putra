@@ -25,3 +25,6 @@ Soon
 
 ### Error Report
 Monitoring system on Jupyter Notebook not working with error message.
+
+<img src="https://github.com/gredychristian/Mikrokontroller-A081_22081010195_Gredy-Christian-Hendrawan-Putra/blob/main/06-itclab_jupyter/1%20Jupyter%20Testing.png" height="500">
+<img src="https://github.com/gredychristian/Mikrokontroller-A081_22081010195_Gredy-Christian-Hendrawan-Putra/blob/main/06-itclab_jupyter/2%Error%Message.png" height="500">
