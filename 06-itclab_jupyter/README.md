@@ -21,4 +21,8 @@ The interface was build using ipywidgets and bqplot. The dynamic plant simulatio
 - tclab (only for the control_arduino.py)
 
 ### Documentation
-ERROR - Not Working
+None
+
+### Error Report
+Monitoring system on Jupyter Notebook not working.
+
