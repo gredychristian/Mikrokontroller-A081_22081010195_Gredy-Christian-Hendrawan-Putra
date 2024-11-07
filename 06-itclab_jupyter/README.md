@@ -28,3 +28,24 @@ Monitoring system on Jupyter Notebook not working with error message.
 
 <img src="https://github.com/gredychristian/Mikrokontroller-A081_22081010195_Gredy-Christian-Hendrawan-Putra/blob/main/06-itclab_jupyter/1%20Jupyter%20Testing.png" height="500">
 <img src="https://github.com/gredychristian/Mikrokontroller-A081_22081010195_Gredy-Christian-Hendrawan-Putra/blob/main/06-itclab_jupyter/2%Error%Message.png" height="500">
+
+```
+Exception in thread Thread-3 (_work_pid):
+Traceback (most recent call last):
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Users\lenovo\AppData\Roaming\Python\Python313\site-packages\ipykernel\ipkernel.py", line 766, in run_closure
+    _threading_Thread_run(self)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\lenovo\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Campus\Project\Arduino\iTCLab\Mikrokontroller-A081_22081010195_Gredy-Christian-Hendrawan-Putra\06-itclab_jupyter\control_arduino.py", line 1210, in _work_pid
+    a.T1 + 273.15,
+    ^^^^
+  File "D:\Campus\Project\Arduino\iTCLab\Mikrokontroller-A081_22081010195_Gredy-Christian-Hendrawan-Putra\06-itclab_jupyter\itclab.py", line 76, in T1
+    self._T1 = float(self.read('T1'))
+               ~~~~~^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'ets Jun  8 2016 00:22:57'
+```
